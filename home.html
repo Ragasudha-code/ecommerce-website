@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple E-Commerce Store</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    header nav {
+      display: flex;
+    }
+
+    header nav a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+    }
+
+    header nav a:hover {
+      text-decoration: underline;
+    }
+
+    .cart {
+      background-color: #f90;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .products-section {
+      padding: 20px;
+    }
+
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    .product {
+      background-color: white;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      width: 200px;
+      margin: 10px;
+      padding: 15px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .product img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .product h3 {
+      font-size: 18px;
+      margin: 10px 0;
+    }
+
+    .product p {
+      color: #555;
+    }
+
+    .product button {
+      background-color: #28a745;
+      color: white;
+      border: none;
+      padding: 10px;
+      width: 100%;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .product button:hover {
+      background-color: #218838;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header and Navigation -->
+  <header>
+    <h1>ShopEasy</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Products</a>
+      <a href="#">Contact Us</a>
+      <a href="#">About Us</a>
+    </nav>
+    <div class="cart">
+      <a href="#">🛒 Cart (0)</a>
+    </div>
+  </header>
+
+  <!-- Main Content: Product Listings -->
+  <section class="products-section">
+    <h2>Featured Products</h2>
+    <div class="products">
+      <!-- Product 1 -->
+      <div class="product">
+        <img src="https://th.bing.com/th/id/OIP.7wiorxcQ2fo-bVbAnyhD9QHaHa?rs=1&pid=ImgDetMain/200" alt="Product Image">
+        <h3>Product 1</h3>
+        <p>$29.99</p>
+        <button>Add to Cart</button>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="product">
+        <img src="https://th.bing.com/th?id=OPAC.uiSbqFG%2f1erxqA474C474&w=140&h=140&pid=21.1/200" alt="Product Image">
+        <h3>Product 2</h3>
+        <p>$49.99</p>
+        <button>Add to Cart</button>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="product">
+        <img src="https://th.bing.com/th?id=OPAC.v%2feBjKmrdZcg8w474C474&w=592&h=550&o=5&pid=21.1/200" alt="Product Image">
+        <h3>Product 3</h3>
+        <p>$19.99</p>
+        <button>Add to Cart</button>
+      </div>
+
+      <!-- Product 4 -->
+      <div class="product">
+        <img src="https://th.bing.com/th?id=OPAC.0X50tOFuUHnJVw474C474&w=592&h=550&o=5&pid=21.1/200" alt="Product Image">
+        <h3>Product 4</h3>
+        <p>$59.99</p>
+        <button>Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 ShopEasy. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      padding: 15px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    .cart-section {
+      padding: 20px;
+    }
+
+    .cart-items {
+      width: 100%;
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+    }
+
+    .cart-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+      padding-bottom: 15px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .cart-item img {
+      width: 100px;
+      height: auto;
+    }
+
+    .cart-item-details {
+      flex: 1;
+      padding: 0 20px;
+    }
+
+    .cart-item-details h3 {
+      margin: 0;
+      font-size: 18px;
+    }
+
+    .cart-item-details p {
+      margin: 5px 0;
+      color: #555;
+    }
+
+    .cart-item-quantity {
+      display: flex;
+      align-items: center;
+    }
+
+    .cart-item-quantity input {
+      width: 50px;
+      padding: 5px;
+      text-align: center;
+      margin-left: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+
+    .cart-total {
+      margin-top: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .cart-total h2 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    .checkout-btn {
+      padding: 10px 20px;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .checkout-btn:hover {
+      background-color: #218838;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Your Shopping Cart</h1>
+  </header>
+
+  <!-- Cart Section -->
+  <section class="cart-section">
+    <div class="cart-items">
+      
+      <!-- Cart Item 1 -->
+      <div class="cart-item">
+        <img src="https://th.bing.com/th?id=OPAC.uiSbqFG%2f1erxqA474C474&w=140&h=140&pid=21.1/100" alt="Product Image">
+        <div class="cart-item-details">
+          <h3>Product 1</h3>
+          <p>$29.99</p>
+        </div>
+        <div class="cart-item-quantity">
+          <label for="quantity1">Qty:</label>
+          <input type="number" id="quantity1" value="1" min="1">
+        </div>
+        <button class="remove-btn">Remove</button>
+      </div>
+
+      <!-- Cart Item 2 -->
+      <div class="cart-item">
+        <img src="https://th.bing.com/th?id=OPAC.0X50tOFuUHnJVw474C474&w=592&h=550&o=5&pid=21.1/100" alt="Product Image">
+        <div class="cart-item-details">
+          <h3>Product 2</h3>
+          <p>$49.99</p>
+        </div>
+        <div class="cart-item-quantity">
+          <label for="quantity2">Qty:</label>
+          <input type="number" id="quantity2" value="2" min="1">
+        </div>
+        <button class="remove-btn">Remove</button>
+      </div>
+
+      <!-- Total Price -->
+      <div class="cart-total">
+        <h2>Total: $129.97</h2>
+        <button class="checkout-btn">Proceed to Checkout</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 ShopEasy. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
